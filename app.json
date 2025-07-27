@@ -3,6 +3,7 @@
     "name": "ExpoDemo",
     "slug": "ExpoDemo",
     "version": "1.0.0",
+    "owner": "vaibhavkalvankar",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "expodemo",
@@ -16,7 +17,8 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.vaibhav26.ExpoDemo"
     },
     "web": {
       "bundler": "metro",
@@ -37,6 +39,12 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "a2a5637b-e130-40f8-befa-afb92e93565f"
+      }
     }
   }
 }

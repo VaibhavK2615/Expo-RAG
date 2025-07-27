@@ -1,50 +1,95 @@
-# Welcome to your Expo app 👋
+# 🔍 AI Price Analyzer — HSN-Based RAG App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A mobile application powered by **AI and embeddings** that helps users analyze current and historical product pricing across global markets.
 
-## Get started
+---
 
-1. Install dependencies
+## 🌐 Live App
 
-   ```bash
-   npm install
-   ```
+👉 [**Launch App**](https://expo.dev/accounts/vaibhavkalvankar/projects/ExpoDemo/builds/4b3e4b43-1a0d-40ea-8a0b-81d8cf8dd2bc)
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## 🖼️ Screenshots
 
-In the output, you'll find options to open the app in a
+### 🔹 Landing Page
+![Landing](assets/images/landing.jpg)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### 🔹 Historical Data View
+![Historical Data](assets/images/historical_data.png)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### 🔹 AI Analysis Output
+![AI Analysis](assets/images/analysis.png)
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## 📌 Overview
 
-```bash
-npm run reset-project
-```
+This app uses **HSN code**, **product name**, and **destination country** to fetch and analyze historical pricing data and provide insights including:
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+- 📊 **Current selling price trends**
+- 🤖 **AI-powered market analysis**
+- 🔮 **Predicted price direction**
+- 🧠 **Similar product suggestions** using **embeddings**
+- 📈 **Tabular view of historical data**
 
-## Learn more
+---
 
-To learn more about developing your project with Expo, look at the following resources:
+## 💡 How It Works
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+1. **User Input**:  
+   Enter HSN code, product name, and destination country.
 
-## Join the community
+2. **Data Retrieval**:  
+   App fetches available historical price records for that product and country.
 
-Join our community of developers creating universal apps.
+3. **Embeddings + RAG**:  
+   If enabled, the app uses vector embeddings to find **semantically similar products** with pricing data.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+4. **AI/LLM Analysis**:  
+   Depending on toggle:
+   - Performs **local statistical analysis**, or
+   - Sends enriched data to an LLM for deeper context-based price evaluation and predictions.
+
+5. **Visualization**:  
+   Results are shown with:
+   - Trends
+   - Recommendations
+   - Similar product cards
+   - Historical price table
+
+---
+
+## 🔧 Features
+
+- Toggle between **AI Analysis** and **Local Logic**
+- Enable/disable **Embeddings** usage
+- Interactive UI with loading indicators and cards
+- Tap any similar product to autofill fields and re-analyze
+- Built-in **API health test** for backend services
+
+---
+
+## 📱 Target Users
+
+- Exporters and importers
+- Market analysts
+- Trade consultants
+- Business developers
+
+---
+
+## 🧠 Technology Highlights
+
+- **React Native (Expo)**
+- Retrieval-Augmented Generation (RAG)
+- Vector Embeddings for similarity
+- LLM-powered contextual analysis
+- Structured presentation of insights
+
+---
+
+## ✍️ Author
+
+Created by [Vaibhav Kalvankar]  
+📧 [vaibhavkalvankar97@gmail.com]
