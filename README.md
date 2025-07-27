@@ -16,10 +16,10 @@ A mobile application powered by **AI and embeddings** that helps users analyze c
 ![Landing](assets/images/landing.jpg)
 
 ### 🔹 Historical Data View
-![Historical Data](assets/images/historical_data.png)
+![Historical Data](assets/images/historical_data.jpg)
 
 ### 🔹 AI Analysis Output
-![AI Analysis](assets/images/analysis.png)
+![AI Analysis](assets/images/analysis.jpg)
 
 ---
 
